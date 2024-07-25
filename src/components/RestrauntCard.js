@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const RestrauntCard = (props) => {
     const {resData} = props;
 
-    const {cloudinaryImageId,id,name,cuisines,avgRating,costForTwo} = resData.info;
+    const {cloudinaryImageId,name,cuisines,avgRating,costForTwo} = resData.info;
     return (
         <div className="border w-60 mt-4 mx-[3px] shadow-lg rounded-lg bg-white hover:shadow-xl">
             <img className="h-52 w-[90%] object-cover mx-[5%] mt-2 rounded-lg border shadow-md hover:shadow-lg" src={CARD_URL + cloudinaryImageId} />
